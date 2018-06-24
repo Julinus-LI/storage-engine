@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL	sl_log.h	8;"	d
+DBG	sl_log.h	11;"	d
+ERR	sl_log.h	12;"	d
+INF	sl_log.h	9;"	d
+MASK_SIG	sig_deal.h	14;"	d
+PATH_MAX	sl_com.h	4;"	d
+SIG_RETURN	sig_deal.h	16;"	d
+SIZE_G	sl_com.h	7;"	d
+SIZE_K	sl_com.h	5;"	d
+SIZE_M	sl_com.h	6;"	d
+TYPE_DOUBLE	sl_conf.h	/^    TYPE_DOUBLE,$/;"	e	enum:__dat_type_t
+TYPE_INT	sl_conf.h	/^    TYPE_INT = 0,$/;"	e	enum:__dat_type_t
+TYPE_LONG	sl_conf.h	/^    TYPE_LONG,$/;"	e	enum:__dat_type_t
+TYPE_STRING	sl_conf.h	/^    TYPE_STRING$/;"	e	enum:__dat_type_t
+UNMASK_SIG	sig_deal.h	15;"	d
+WAR	sl_log.h	10;"	d
+_DEF_INFO_H	def_info.h	9;"	d
+_DISK_INFO_H	disk_info.h	9;"	d
+_SIG_DEAL_H	sig_deal.h	9;"	d
+_WRITE_DATA_H	write_data.h	9;"	d
+__SL_COMM_H__	sl_com.h	2;"	d
+__SL_CONF_H__	sl_conf.h	2;"	d
+__SL_LOG_H__	sl_log.h	2;"	d
+__SL_QUE_H__	sl_que.h	2;"	d
+__dat_type_t	sl_conf.h	/^enum __dat_type_t$/;"	g
+__def_info_t	def_info.h	/^typedef struct __def_info_t$/;"	s
+__disk_info_t	disk_info.h	/^typedef struct __disk_info_t$/;"	s
+__node_info_t	disk_info.h	/^typedef struct __node_info_t$/;"	s
+__que_t	sl_que.h	/^typedef struct __que_t$/;"	s
+__sthr_info_t	sig_deal.h	/^typedef struct __sthr_info_t$/;"	s
+__wthr_info_t	write_data.h	/^typedef struct __wthr_info_t$/;"	s
+bbuff	disk_info.h	/^    que_t           *bbuff;$/;"	m	struct:__disk_info_t
+block	sl_que.h	/^    char    **block;$/;"	m	struct:__que_t
+block_allsig	sig_deal.c	/^int block_allsig(int flag)$/;"	f
+block_num	sl_que.h	/^    int     block_num;$/;"	m	struct:__que_t
+buff	disk_info.h	/^    char buff[SIZE_M];$/;"	m	struct:__node_info_t
+can_read	sl_que.h	20;"	d
+can_write	sl_que.h	22;"	d
+close_conf	sl_conf.c	/^void close_conf()$/;"	f
+close_log	sl_log.c	/^void close_log()$/;"	f
+conf	def_info.c	/^char * conf = "..\/etc\/store.cfg";$/;"	v
+cpu_id	sig_deal.h	/^    int cpu_id;$/;"	m	struct:__sthr_info_t
+cpu_id	write_data.h	/^    int cpu_id;$/;"	m	struct:__wthr_info_t
+ctrl_file	def_info.h	/^    char ctrl_file[PATH_MAX];   \/\/管道文件路径$/;"	m	struct:__def_info_t
+cur_fsize	disk_info.h	/^    int64_t         cur_fsize;\/\/当前文件大小$/;"	m	struct:__disk_info_t
+cur_ftime	disk_info.h	/^    int64_t         cur_ftime;\/\/写入起始时间$/;"	m	struct:__disk_info_t
+daemon_flags	main.c	/^int daemon_flags = 0;$/;"	v
+daemon_instance	main.c	/^static int daemon_instance()$/;"	f	file:
+def_info	def_info.c	/^def_info_t  *def_info = NULL;$/;"	v
+def_info_t	def_info.h	/^}def_info_t;$/;"	t	typeref:struct:__def_info_t
+disk_id	disk_info.h	/^    int             disk_id;$/;"	m	struct:__disk_info_t
+disk_id	write_data.h	/^    int *disk_id;$/;"	m	struct:__wthr_info_t
+disk_info	disk_info.c	/^disk_info_t *disk_info = NULL;$/;"	v
+disk_info_t	disk_info.h	/^}disk_info_t;$/;"	t	typeref:struct:__disk_info_t
+disk_num	def_info.h	/^    int disk_num;   \/\/磁盘个数$/;"	m	struct:__def_info_t
+disk_num	write_data.h	/^    int disk_num;$/;"	m	struct:__wthr_info_t
+fbuff	disk_info.h	/^    que_t           *fbuff;$/;"	m	struct:__disk_info_t
+file_fd	disk_info.h	/^    int             file_fd;$/;"	m	struct:__disk_info_t
+file_size	disk_info.h	/^    int64_t         file_size;\/\/文件指定大小$/;"	m	struct:__disk_info_t
+get_opt	main.c	/^static int get_opt(int argc, char *argv[])$/;"	f	file:
+get_read	sl_que.h	25;"	d
+get_val_arry	sl_conf.c	/^int get_val_arry(char *path, void **val, int count, int dtype)$/;"	f
+get_val_single	sl_conf.c	/^int get_val_single(char *path, void *val, int dtype)$/;"	f
+get_write	sl_que.h	28;"	d
+init_disk_info	disk_info.c	/^int init_disk_info()$/;"	f
+init_system	main.c	/^void init_system()$/;"	f
+init_write_data_info	write_data.c	/^int init_write_data_info()$/;"	f
+is_full	disk_info.h	/^    int             is_full;\/\/判断该磁盘是否有空闲节点$/;"	m	struct:__disk_info_t
+len	disk_info.h	/^    int len;$/;"	m	struct:__node_info_t
+log_file	def_info.h	/^    char log_file[PATH_MAX];    \/\/日志文件路径$/;"	m	struct:__def_info_t
+log_handle	sl_log.c	/^zlog_category_t *log_handle = NULL;$/;"	v
+log_type	main.c	/^char log_type[8] = {0};$/;"	v
+main	main.c	/^int main(int argc,char *argv[])$/;"	f
+make_sig_action	sig_deal.c	/^int make_sig_action()$/;"	f
+my_aiocb	disk_info.h	/^    struct aiocb    *my_aiocb;$/;"	m	struct:__disk_info_t	typeref:struct:__disk_info_t::aiocb
+node_info	disk_info.h	/^    node_info_t     *node_info;$/;"	m	struct:__disk_info_t
+node_info_t	disk_info.h	/^}node_info_t;$/;"	t	typeref:struct:__node_info_t
+node_num	def_info.h	/^    int node_num;   \/\/队列节点个数$/;"	m	struct:__def_info_t
+node_size	def_info.h	/^    int64_t node_size;  \/\/队列节点大小$/;"	m	struct:__def_info_t
+open_conf	sl_conf.c	/^int open_conf(char *name)$/;"	f
+open_log	sl_log.c	/^int open_log(char *path, char *mode)$/;"	f
+p_conf	sl_conf.c	/^config_t *p_conf = NULL;$/;"	v
+path	def_info.h	/^    char **path;    \/\/磁盘挂载路径$/;"	m	struct:__def_info_t
+path	disk_info.h	/^    char            path[PATH_MAX];$/;"	m	struct:__disk_info_t
+print_data	def_info.c	/^int print_data()$/;"	f
+print_disk_info	disk_info.c	/^int print_disk_info()$/;"	f
+print_write_data	write_data.c	/^void print_write_data()$/;"	f
+que_t	sl_que.h	/^}que_t;$/;"	t	typeref:struct:__que_t
+rcpu_id	def_info.h	/^    int rcpu_id;   \/\/处理线程的cpuid$/;"	m	struct:__def_info_t
+read	sl_que.h	/^    int     read;$/;"	m	struct:__que_t
+read_conf	def_info.c	/^int read_conf()$/;"	f
+read_outval	sl_que.h	38;"	d
+read_pop	sl_que.h	32;"	d
+read_push	sl_que.h	30;"	d
+ring_init	sl_que.h	12;"	d
+rthr_num	def_info.h	/^    int rthr_num;   \/\/处理线程个数$/;"	m	struct:__def_info_t
+scpu_id	def_info.h	/^    int scpu_id;   \/\/信号处理线程的cpuid$/;"	m	struct:__def_info_t
+seg_type	def_info.h	/^    int seg_type;   \/\/文件分割方式0-时间,1-大小$/;"	m	struct:__def_info_t
+seg_type	disk_info.h	/^    int             seg_type;\/\/0-time 1-size$/;"	m	struct:__disk_info_t
+sig_write	sig_deal.c	/^void sig_write(int signo, siginfo_t *info, void *ctext)$/;"	f
+ssize	def_info.h	/^    int64_t ssize;  \/\/文件分割大小$/;"	m	struct:__def_info_t
+start_write_data	write_data.c	/^int start_write_data()$/;"	f
+sthr_info_t	sig_deal.h	/^}sthr_info_t;$/;"	t	typeref:struct:__sthr_info_t
+sthr_num	def_info.h	/^    int sthr_num;   \/\/信号处理线程个数$/;"	m	struct:__def_info_t
+stime	def_info.h	/^    int64_t stime;  \/\/文件分割的间隔时间$/;"	m	struct:__def_info_t
+thr_id	sig_deal.h	/^    int thr_id;$/;"	m	struct:__sthr_info_t
+thr_id	write_data.h	/^    int thr_id;$/;"	m	struct:__wthr_info_t
+thw_run	write_data.c	/^void *thw_run(void *args)$/;"	f
+time_temp	disk_info.h	/^    int64_t         time_temp;\/\/指定间隔时间$/;"	m	struct:__disk_info_t
+w_flag	disk_info.h	/^    volatile int    w_flag;$/;"	m	struct:__disk_info_t
+wcpu_id	def_info.h	/^    int wcpu_id;   \/\/写盘线程的cpuid$/;"	m	struct:__def_info_t
+write	sl_que.h	/^    int     write;$/;"	m	struct:__que_t
+write_inval	sl_que.h	40;"	d
+write_pop	sl_que.h	36;"	d
+write_push	sl_que.h	34;"	d
+wthr_info	write_data.c	/^wthr_info_t * wthr_info = NULL;$/;"	v
+wthr_info_t	write_data.h	/^}wthr_info_t;$/;"	t	typeref:struct:__wthr_info_t
+wthr_num	def_info.h	/^    int wthr_num;   \/\/写盘线程个数$/;"	m	struct:__def_info_t

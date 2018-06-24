@@ -1,0 +1,13 @@
+[global]                                                    
+strict init = true                                          
+buffer min = 1024                                           
+buffer max = 0                                              
+rotate lock file = /tmp/zlog.lock                           
+
+[formats]                                                   
+simple  = "%m%n"                                            
+simple2 = "%d(%F %T) %5V |%m%n"                             
+
+[rules]                                                   
+f_cat.*         "../log/store_engine.log";simple2         
+o_cat.*         >stdout;simple2
