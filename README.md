@@ -43,7 +43,13 @@ libzlog
 数据处理线程个数
 绑定的cpu核心id
 
+网络抓包模块(使用lipcap网络库 从网卡抓取数据包)
+
+解析数据包，从数据包中分析数据包的以太网帧头信息，IP 数据报的头部信息，TCP 数据报的头部信息，来了解网络的状况
+
+
 程序的启动方法：
+
 mkdir storage_engine
 
 git clone git@github.com:ARRAYLI/storage-engine.git
