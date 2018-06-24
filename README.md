@@ -45,10 +45,16 @@ libzlog
 
 程序的启动方法：
 mkdir storage_engine
+
 git clone git@github.com:ARRAYLI/storage-engine.git
+
 cd src 
+
 ./build.sh
+
 ./create_dir.sh
+
 ./show_dir.sh
 
 sudo ./test
+
